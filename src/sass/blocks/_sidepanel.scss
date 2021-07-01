@@ -1,0 +1,47 @@
+.sidepanel {
+    position: fixed;
+    top: 230px;
+    left: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 340px;
+    z-index: 3;
+    &__divider {
+        width: 2px;
+        height: 70px;
+        background-color: #000;
+    }
+    &__text {
+        height: 150px;
+        width: 25px;
+        span {
+            transform: rotate(-90deg) translate(-40%, -340%);
+            display: block;
+            width: 150px;
+        }
+    }
+    &__link {
+        &:hover {
+            &:nth-child(1) {
+                path {
+                    transition: 0.6s all;
+                    fill: #4267B2;
+                }
+            }
+            &:nth-child(2) {
+                path {
+                    transition: 0.6s all;
+                    fill: #E1306C;                  
+                }
+            }
+            &:nth-child(3) {
+                path {
+                    transition: 0.6s all;
+                    fill: #6e5494;
+                }
+            }
+        }
+    }
+}
