@@ -27,3 +27,27 @@ const counters = document.querySelectorAll(".skills__progress-percent"),
 counters.forEach((item, i) => {
     lines[i].style.width = item.innerHTML;
 });
+
+$(document).ready(function(){
+	$(".promo,  .menu__list").on("click","a", function (event) {
+		event.preventDefault(); //опустошим стандартную обработку
+		var id  = $(this).attr('href'), //заберем айдишник блока с параметром URL
+			top = $(id).offset().top; //определим высоту от начала страницы до якоря
+	$('body,html').animate({scrollTop: top}, 1000); //сделаем прокрутку за 1 с
+	});
+
+    $("form").submit(function(e) {
+        e.preventDefault();
+        $.ajax({
+            type:"POST",
+            url: "mailer/smart.php",
+            data: $(this).serialize()
+        }).done(function() {
+            $(this).find("input").val("");
+
+
+            $("form").trigger("reset");
+        });
+        return false;
+    });
+});
