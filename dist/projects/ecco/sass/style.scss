@@ -1,0 +1,52 @@
+@import "../fonts/fonts";
+@import "../sass/css/variables";
+
+* {
+    font-family: 'Gotham Pro';
+    box-sizing: border-box;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+h1 {
+    display: none;
+}
+
+img {
+    max-width: 100%;
+    pointer-events: none;
+}
+
+.container {
+    max-width: 1170px;
+    margin: 0 auto;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+a {
+    color: inherit;
+    text-decoration: none
+}
+
+button {
+    outline: none;
+}
+
+@import "blocks/intro";
+@import "blocks/sale-prices";
+@import "blocks/header";
+@import "blocks/buttons";
+@import "blocks/card";
+@import "blocks/gallery";
+@import "blocks/slider";
+@import "blocks/advantages";
+@import "blocks/titles";
+@import "blocks/products";
+@import "blocks/media";

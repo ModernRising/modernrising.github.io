@@ -1,0 +1,116 @@
+.slick-track{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slick-list {
+    overflow: hidden;
+}
+
+.gallery__slider .slider {
+    min-width: 0;
+    position: relative;
+}
+
+.gallery__slider .slick-arrow{
+    position: absolute;
+    width: 101px;
+    height: 101px;
+    border: none;
+    cursor: pointer;
+    z-index: 10;
+    font-size: 0;
+    border-radius: 100%;
+    transition: 0.3s all;
+    background-color: $secondary-color;
+    @media (max-width:991px) {
+        width: 81px;
+        height: 81px;
+    };
+    @media (max-width:767px) {
+        width: 45px;
+        height: 45px;
+    };
+}
+
+
+.gallery__slider .slick-arrow.slick-prev{
+    display: none !important;
+    background: url("../icons/slider-leftArrow.svg") center center no-repeat;
+    background-color: $secondary-color;
+    &:hover {
+        background-color: #060951;
+    }
+    @media (max-width:991px) {
+        display: inline-block !important;
+        bottom: -125px;
+        left: 55px;
+    };
+    @media (max-width:767px) {
+        bottom: -16px;
+        background: url("../icons/slider-leftArrow.svg") center center no-repeat;
+       background-size: 16px 12px;
+       background-color: $secondary-color;
+    }
+    @media (max-width:575px) {
+        left: 0;
+    }
+}
+
+.gallery__slider .slick-arrow.slick-next{
+    bottom: 10%;
+    left: 0%;
+    background: url("../icons/slider-leftArrow.svg") center center no-repeat;
+    background-color: $secondary-color;
+    &:hover {
+        background-color: #060951;
+   }
+   @media (max-width:991px) {
+    background: url("../icons/slider-rightArrow.svg") center center no-repeat;
+    background-color: $secondary-color;
+    bottom: -125px;
+    right: 55px;
+    left: auto;
+   }
+   @media (max-width:767px) {
+       bottom: -16px;
+       background: url("../icons/slider-rightArrow.svg") center center no-repeat;
+       background-size: 16px 12px;
+       background-color: $secondary-color;
+   }
+   @media (max-width:575px) {
+    right: 0;
+    }
+}
+
+.gallery__slider .slick-slide {
+    &:nth-child(1n+2) {
+        margin-left: 26px;
+    }
+}
+
+.gallery__slider .slick-dots{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+}
+.gallery__slider .slick-dots li{
+    list-style: none;
+    margin: 0 10px;
+}
+
+.gallery__slider .slick-dots li.slick-active button{
+    background-color: $secondary-color;
+}
+
+.gallery__slider .slick-dots li button{
+    font-size: 0;
+    width: 11px;
+    height: 11px;
+    background-color: #000851;
+    border-radius: 50%;
+    border: none;
+}
+

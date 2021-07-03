@@ -1,0 +1,173 @@
+.btn__sales {
+    margin-top: 23px;
+    width: 175px;
+    height: 175px;
+    background: $main-color;
+    border-radius: 100%;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 24px;
+    text-transform: uppercase;
+    color: #000851;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s all;
+    z-index: 99999;
+    &:hover {
+        background: #eb410e;
+        color: #fff;
+    }
+}
+
+.btn__open-close {
+    position: absolute;
+    z-index: 1;
+    width: 45px;
+    height: 45px;
+    border-radius: 100%;
+    border: none;
+    cursor: pointer;
+    background: #d50450;
+      &:before, &:after {
+        position: absolute;
+        top: 12px;
+        left: 22px;
+        content: ' ';
+        height: 20px;
+        width: 2px;
+        background-color: #fff;
+      }
+      &:before {
+        transform: rotate(0deg);
+      }
+      &:after {
+        transform: rotate(90deg);
+      }
+
+      &:hover ~ .card-1  {
+        opacity: 1;
+        visibility: visible;
+      }
+
+      &-1 {
+        top: 44%;
+        left: -5%;
+      }
+
+      &-2 {
+        top: 4%;
+        right: 37%;
+        &:hover ~ .card-2  {
+          opacity: 1;
+          visibility: visible;
+        }
+      }
+
+      &-3 {
+        bottom: 11%;
+        right: 3%;
+        &:hover ~ .card-3  {
+          opacity: 1;
+          visibility: visible;
+        }
+      }
+      
+}
+
+.btn__choice {
+  display: block;
+  position: relative;
+  width: 294px;
+  height: 51px;
+  color: #000851;
+  border: 1px solid #000851;
+  background: transparent;
+  cursor: pointer;
+  transition: 0.3s all;
+  &::before {
+    position: absolute;
+    content: "";
+    width: 21px;
+    height: 18px;
+    left: 20px;
+    background: url("../icons/check.svg") no-repeat center center;
+  }
+  &:nth-child(1n+2) {
+    margin-top: 29px;
+  }
+  &_active {
+    color: #fff;
+    background-color: #000851;
+    &::before {
+      background: url("../icons/check_active.svg") no-repeat center center;
+    }
+  }
+ 
+}
+
+.slide {
+  position: absolute;
+  bottom: 20px;
+  right: 100px;
+  width: 45px;
+  height: 45px;
+  border-radius: 100%;
+  border: 1px solid #fff;
+  font-size: 0;
+  cursor: pointer;
+  background: url("../icons/slider-leftArrow.svg") no-repeat center center;
+  background-size: 16px 12px;
+  transition: 0.5s all;
+  z-index: 9999;
+  &_right {
+    right: 20px;
+    background: url("../icons/right-arrow.png") no-repeat center center;
+    background-size: 16px 12px;
+  }
+  &:hover {
+    background-color: #000851;
+    border-color: transparent;
+  }
+}
+
+.btn__order {
+  margin-top: 29px;
+  display: block;
+  width: 281px;
+  height: 45px;
+  background: linear-gradient( 90deg, #8914c3, #bd2276);
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+  font-size: 18px;
+  color: #fff;
+}
+
+.arr {
+  position: absolute;
+  top: 50%;
+  width: 45px;
+  height: 45px;
+  border-radius: 100%;
+  border: 1px solid #fff;
+  font-size: 0;
+  cursor: pointer;
+  transition: 0.5s all;
+  z-index: 9999;
+  &:hover {
+    background-color: #000851;
+    border-color: transparent;
+  }
+  &_left {
+    background: url("../icons/slider-leftArrow.svg") no-repeat center center;
+    background-size: 16px 12px;
+    left: 20px;
+  }
+  &_right {
+    background: url("../icons/right-arrow.png") no-repeat center center;
+    background-size: 16px 12px;
+    right: 20px;
+  }
+}
+
+

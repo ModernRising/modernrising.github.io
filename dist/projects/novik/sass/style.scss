@@ -1,0 +1,9 @@
+@import "../fonts/fonts";
+@import "../sass/variables";
+@import "../sass/general";
+@import "../sass/media";
+
+.container {
+    max-width: 950px;
+    margin: 0 auto;
+}

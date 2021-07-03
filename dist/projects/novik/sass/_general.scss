@@ -1,0 +1,324 @@
+
+.header {
+    padding: 33px 0px 40px 0px;
+    &__divider {
+        border: 1px solid #828282;
+        margin-top: 32px;
+    }
+}
+
+nav {
+    position: relative;
+}
+
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    font-family: $font-bold;
+    font-size: 18px;
+    color: #828282;
+    list-style-type: none;
+    padding: 0;
+    &__link {
+        text-decoration: none;
+        color: #828282;
+        transition: ease 0.3s;
+        &_active {
+            color: #070707;
+        }
+        &:hover {
+            color: #070707;
+        }
+    }
+}
+
+.mobile-menu {
+    width: 375px;
+}
+
+.c-hamburger {
+    display: none;
+    position: absolute;
+    right: 0;
+    top: 44px;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    width: 96px;
+    height: 96px;
+    font-size: 0;
+    box-shadow: none;
+    border: none;
+    cursor: pointer;
+    &:focus {
+        outline: none;
+    }
+    span {
+        display: block;
+        position: absolute;
+        top: 55px;
+        left: 18px;
+        width: 35px;
+        height: 4px;
+        background: #000000;
+        &::before, &::after {
+            display: block;
+            position: absolute;
+            left: 0;
+            height: 4px;
+            width: 100%;
+            background: #000000;
+            content: "";     
+        }
+        &::before {
+            top: -8px;
+        }
+
+        &::after {
+            bottom: -8px;
+        }
+    }
+
+    &-line {
+        background: none;
+        span {
+            transition: background 0s 0.3s;
+            &::before, &::after {
+                transition-duration: 0.3s, 0.3s;    
+                transition-delay: 0.3s, 0s;  
+            }
+            &::before {
+                transition-property: top, transform;
+            }
+            &::after {
+                transition-property: bottom, transform;
+            }
+        }
+
+    }
+
+}
+
+.is-active {
+    span {
+        background: none;
+        
+        &::before {
+            top: 0;
+            transform: rotate(-45deg);
+        }
+        &::after {
+            bottom: 0;
+            transform: rotate(45deg);
+        }
+        &::before, &::after {    
+            transition-delay: 0, 0.1s;  
+            background: #828282;
+        }
+    }
+}
+
+.introduce {
+    padding: 0 0 104px 0;
+
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__title {
+        font-family: $font-bold;
+        font-size: 48px;
+        margin: 0;
+    }
+
+    &__descr {
+        font-family: $font-md;
+        font-size: 18px;
+        line-height: 22px;
+    }
+
+
+    &__bg {
+        margin-top: 50px;
+        img {
+            max-width: 100%;
+        }
+        .main-mobile {
+            display: none;
+        }
+    }
+}
+
+.lang {
+    font-family: $font-bold;
+    transform: rotate(-90deg);
+    font-size: 16px;
+    .link {
+        text-decoration: none;
+        color: #828282;
+        transition: ease 0.3s;
+        &_active {
+            color: #070707;
+            text-decoration: none;
+        }
+    }
+}
+
+.title {
+    font-family: $font-bold;
+    font-size: 34px;
+    color: #070707;
+    text-align: center;
+    margin: 0;
+}
+
+.about {
+    padding: 120px 0 0 0;
+    min-height: 506px;
+    background: #F6F6F6;
+    &__descr {
+        margin: 0 auto;
+        margin-top: 18px;
+        max-width: 425px;
+        font-family: $font-md;
+        font-size: 18px;
+        line-height: 22px;
+        text-align: center;
+    }
+}
+
+.skills {
+    padding: 91px 0 111px 0;
+    &__subtitle {
+        font-family: $font-md;
+        font-size: 18px;
+        text-align: center;
+        margin-top: 70px;
+    }
+
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 83px;
+    }
+
+    &__img > img {
+        display: block;
+        margin: 0 auto;
+    }
+
+    &__name {
+        font-family: $font-bold;
+        margin-top: 24px;
+        text-align: center;
+        color: #828282;
+        font-size: 14px;
+    }
+
+    &__stars {
+        margin-top: 41px;
+        & > img {
+            display: block;
+            margin: 0 auto;
+        }
+    }
+
+}
+
+.portfolio {
+    padding: 113px 0 96px 0;
+    background: #F6F6F6;
+    &__example {
+        margin-top: 47px;
+        min-height: 510px;
+        img {
+            max-width: 100%;
+        }
+    }
+
+    &__link {
+        margin-top: 45px;
+        font-family: $font-md;
+        font-size: 18px;
+        text-align: center;
+        a {
+            color: #070707;
+            text-decoration: none;
+            &:hover{
+                text-decoration: underline;
+            }
+        }
+    }
+}
+
+.contacts {
+    padding: 114px 0 123px 0;
+    &__descr {
+        text-align: center;
+        margin-top: 20px;
+        font-size: 18px;
+        font-family: $font-md;
+        line-height: 22px;
+    }
+
+    &__btn {
+        display: block;
+        margin: 0 auto;
+        margin-top: 30px;
+        width: 180px;
+        height: 42px;
+        background: black;
+        font-family: $font-bold;
+        font-size: 18px;
+        color: #FFFFFF;
+        text-align: center;
+        border-radius: 12px;
+        outline: none;
+        border: none;
+        cursor: pointer;
+        &:hover {
+            box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+        }
+    }
+
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+        margin: 0 auto;
+        margin-top: 86px;
+        width: 342px;
+    }
+
+    &__social {
+        cursor: pointer;
+        padding-bottom: 2px;
+        &:hover {
+            border-bottom: 2px solid;
+            margin-bottom: -2px;
+        }
+    }
+
+    &__links {
+        margin-top: 45px;
+        font-family: $font-md;
+        font-size: 14px;
+        text-align: center;
+        line-height: 22px;
+        color: #828282;
+        span {
+            display: block;
+        }
+
+        a {
+            text-decoration: none;
+            color: #828282;
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+}

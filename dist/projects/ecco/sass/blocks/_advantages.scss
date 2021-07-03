@@ -1,0 +1,95 @@
+.advantages {
+    padding: 100px 0px;
+    background-color: #D2ECFE;
+    z-index: 9998;
+    overflow: hidden;
+    position: relative;
+    &__effect {
+        position: absolute;
+        z-index: 9999;
+        pointer-events: none;
+        top: 0%;
+        left: 5%;
+        &_2 {
+            top: 30%;
+            left: auto;
+            right: 5%;
+        }
+        &_3 {
+            top: 55%;
+            left: 6%;
+        }
+    }              
+    &__container {
+        margin-top: 98px;
+        display: flex;
+    }
+    &__demo {
+        display: none;
+        margin-left: 49px;
+        &_active {
+            display: flex;
+        }
+    }
+
+    &__show {
+        flex: 0 0 50%;
+        img {
+            display: block;
+            height:auto;
+            border-radius: 0 0px 0px 25px;
+        }
+    }
+    &__block {
+        flex: 1 0 50%;
+        background: #000851;
+        border-radius: 0 25px 25px 0px;
+        padding: 86px 24px 89px 59px;
+    }
+    &__title {
+        font-size: 24px;
+        color: $main-color;
+    }
+    &__descr {
+        margin-top: 43px;
+        font-size: 18px;
+        line-height: 28px;
+        color: #FFFFFF;
+    }
+
+    &__footer {
+        position: relative;
+        z-index: 50;
+        padding-top: 290px;
+        .title {
+            text-align: left;
+        }
+    }
+    &__footer-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__footer-descr {
+        max-width: 435px;
+        font-size: 24px;
+        color: #000851;
+        line-height: 34px;
+    }
+    &__footer-video {
+        iframe {
+            width: 556px;
+            height: 556px;
+            border: none;
+            border-radius: 70px;
+        }
+    }
+    &__footer-img {
+        position: absolute;
+        z-index: -99999;
+        bottom: -12%;
+        right: -50%;
+        pointer-events: none;
+    }
+
+}

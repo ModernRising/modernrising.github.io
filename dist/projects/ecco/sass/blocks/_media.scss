@@ -1,0 +1,871 @@
+@media (max-width: 1400px) {
+    .intro {
+        &__shoes-left {
+            left: 0%;
+            top: 9%;
+            max-width: 570px;
+        }
+    
+        &__shoes-right {
+            right: 5%;
+            top: 10%;
+            max-width: 460px;
+        }
+    }
+    .products {
+        &__shoes-aside {
+            display: none;
+            &_active {
+                display: none;
+            }
+        }
+    }
+}
+
+@media (max-width: 1200px) {
+    .container {
+        padding: 0 15px;
+    }
+    .intro {
+        background: url("../img/angle.png") top no-repeat,
+                    url("../img/main-background.png") no-repeat center center/cover;
+        &__shoes-left {
+            left: 0%;
+            top: 13%;
+            max-width: 470px;
+        }
+    
+        &__shoes-right {
+            right: 4%;
+            top: 12%;
+            max-width: 380px;
+        }
+    }
+    .advantages {
+        &__effect {
+            z-index: -999999;
+            top: 2%;
+            left: -8%;
+            &_2 {
+                top: 35%;
+                left: auto;
+                right: 0%;
+            }
+            &_3 {
+                top: 55%;
+                left: 6%;
+            }
+        }
+        &__block {
+            padding: 13px 16px 0px 24px;
+        }
+        &__footer-img {
+            bottom: -11%;
+            right: -35%;
+        }
+    }
+    .products {
+        &__shoes-1 {
+            img {
+                max-width: 85%;
+            }
+        }
+        &__shoes-2 {
+            img {
+                max-width: 85%;
+            }
+        }
+        &__col-2-block {
+            padding: 0 40px;
+        }
+    }
+}
+
+@media (max-width: 991px) {
+    .intro {
+        background: url("../img/angle.png") top no-repeat,
+                    url("../img/main-background.png") no-repeat center center/cover;
+        min-height: 1300px;
+        &__shoes-left {
+            left: -2%;
+            top: 19%;
+            max-width: 380px
+        }
+    
+        &__shoes-right {
+            right: -3%;
+            top: 17%;
+            max-width: 320px;
+        }
+
+        &__footer {
+            padding-top: 120px;
+        }
+
+        &__footer-wrapper {
+            max-width: 80%;
+        }
+        
+        .btn__open-close {
+            &-1 {
+                top: 57%;
+                left: -5%;;
+            }
+            &-2 {
+                top: 2%;
+                right: 31%;
+            }
+            &-3 {
+                bottom: -3%;
+                right: 2%
+            }
+        }
+        .card {
+            top: -31%;
+            left: -2%;
+            &-2 {
+                top: 8%;
+                left: 17%;
+            }
+            &-3 {
+                top: 5%;
+                left: auto;
+            }
+        }
+    }
+
+    .gallery {
+        padding: 100px 0 100px 0;
+        &__wrapper {
+            display: block;
+        }
+        &__block {
+            text-align: center;
+        }
+        &__descr {
+            margin: 0 auto;
+            margin-top: 44px;
+            width: auto;
+            max-width: 75%;
+        }
+        &__slider {
+            margin-left: 0;
+            margin-top: 35px;
+        }
+    }
+
+    .advantages {
+        &__effect {
+            top: 2%;
+            left: -21%;
+            &_2 {
+                top: 40%;
+                left: auto;
+                right: -24%;
+            }
+            &_3 {
+                top: 44%;
+                left: -12%;
+            }
+        }
+        &__container {
+            align-items: center;
+            flex-direction: column;
+            margin-top: 30px;
+        }
+        &__buttons {
+            width: 100%;
+            .btn__choice {
+                margin: 0 auto;
+                margin-top: 29px;
+                width: 60%;
+                height: 70px;
+            }
+        }
+        &__demo {
+            &_active {
+                display: flex;
+                margin-top: 50px;
+                margin-left: 0;
+            }
+        }
+        &__block {
+            padding: 86px 24px 50px 59px;
+        }
+        &__footer-container {
+            flex-direction: column;
+        }
+        &__footer-descr {
+            max-width: 100%;
+            text-align: center;
+        }
+        .title {
+            text-align: center;
+        }
+        &__footer-video {
+            margin-top: 50px;
+        }
+        &__footer-img {
+            bottom: -9%;
+            right: -35%;
+        }
+    }
+
+    .products {
+        padding: 100px 0px 50px 0px;
+        overflow-x: hidden;
+        &__wrapper {
+            flex-direction: column;
+        }
+        &__col-l {
+            width: 90%;
+            border-radius: 25px 25px 0px 0px;
+        }
+        &__col-2 {
+            width: 90%;
+            border-radius: 0px 0px 25px 25px;
+        }
+        &__shoes-1 {
+            img {
+                max-width: 70%;
+            }
+        }
+        &__shoes-2 {
+            img {
+                max-width: 70%;
+            }
+        }
+
+        &__col-2-block {
+            padding: 0 40px;
+        }
+
+        &__second-wrapper {
+            flex-direction: column-reverse;
+        }
+    }
+
+}
+
+@media (max-width: 767px) {
+    .header {
+        position: inherit;
+        display: flex;
+        justify-content: center;
+    }
+    .intro {
+        background: url("../img/angle.png") top no-repeat,
+                    url("../img/main-background.png") no-repeat center center/cover;
+        &__title {
+            font-size: 32px;
+        }
+        &__wrapper {
+            margin-top: 25px;
+        }
+        .btn__sales {
+            width: 145px;
+            height: 145px;
+            font-size: 16px;
+        }
+        &__shoes-left {
+            left: -2%;
+            top: 20%;
+            max-width: 320px;
+        }
+    
+        &__shoes-right {
+            right: -2%;
+            top: 18%;
+            max-width: 270px;
+        }
+
+        &__footer {
+            padding-top: 190px;
+            .title {
+                font-size: 30px;
+            }
+        }
+        .btn__open-close {
+            display: none;
+            pointer-events:none;
+        }
+
+        .card {
+            margin: 0 auto;
+            margin-top: 25px;
+            width: 100%;
+            padding: 31px 60px 50px 60px;
+            opacity: 1;
+            visibility: visible;
+            position: static;
+            border-radius: 25px;
+        }
+    }
+    
+    .gallery {
+        padding: 60px 0 100px 0;
+        &__wrapper {
+            min-height: auto;
+        }
+        .title {
+            font-size: 30px;
+        }
+        &__descr {
+            margin-top: 20px;
+            max-width: 90%;
+            font-size: 18px;
+        }
+    }
+    .advantages {
+        &__effect {
+            top: 22%;
+            left: -15%;
+            &_2 {
+                top: 55%;
+                left: auto;
+                right: -25%;
+            }
+            &_3 {
+                top: 86%;
+                left: -21%;
+            }
+        }
+        .title {
+            font-size: 30px;
+        }
+        &__container {
+            align-items: center;
+            flex-direction: column;
+            margin-top: 30px;
+        }
+        &__buttons {
+            display: none;
+        }
+        &__demo {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 30px;
+            margin-left: 0;
+        }
+        &__show {
+            max-width: 70%;
+            img {
+                border-radius: 25px 25px 0px 0px;
+            }
+        }
+        &__block {
+            border-radius: 0px 0px 25px 25px;
+            max-width: 70%;
+            padding: 86px 24px 50px 59px;
+        }
+        &__footer {
+            padding-top: 50px;
+        }
+        &__footer-descr {
+            max-width: 90%;
+            font-size: 18px;
+        }
+        &__footer-video {
+            iframe {
+                width: 456px;
+                max-width: 100%;
+            }
+        }
+        &__footer-img {
+            bottom: -12%;
+            right: -35%;
+        }
+    }
+    .products {
+        &__col-l {
+            min-height: 500px;
+        }
+        &__shoes-1 {
+            img {
+                max-width: 70%;
+            }
+        }
+        &__shoes-2 {
+            img {
+                max-width: 70%;
+            }
+        }
+
+        &__title {
+            font-size: 30px;
+            text-align: center;
+        }
+
+        &__images {
+            justify-content: center;
+        }
+        &__container {
+            padding-left:110px;
+        }
+        &__col-2-container {
+            .logo-link {
+                display: none;
+            }
+        }
+
+        &__col-2-block {
+            padding: 0 40px;
+        }
+
+        &__second-wrapper {
+            flex-direction: column-reverse;
+            .logo-link {
+                display: none;
+            }
+        }
+        &__col-2_second {
+            .products__title {
+                margin-left: 0;
+            }
+        }
+    }
+}
+
+@media (max-width: 575px) {
+    .intro {
+        background: url("../img/angle.png") top no-repeat,
+                    url("../img/main-background.png") no-repeat center center/cover;
+        &__title {
+            font-size: 28px;
+        }
+        &__wrapper {
+            margin-top: 25px;
+        }
+        .btn__sales {
+            width: 145px;
+            height: 145px;
+            font-size: 16px;
+        }
+        &__shoes-left {
+            left: -2%;
+            top: 23%;
+            max-width: 250px;
+        }
+    
+        &__shoes-right {
+            right: 0%;
+            top: 18%;
+            max-width: 220px;
+        }
+
+        &__footer {
+            padding-top: 250px;
+            .title {
+                font-size: 28px;
+            }
+        }
+        .card {
+            &__title {
+                font-size: 22px;
+            }
+            &__descr {
+                font-size: 16px;
+            }
+        }
+    }
+    .gallery {
+        .title {
+            font-size: 28px;
+        }
+        &__descr {
+            max-width: 100%;
+            font-size: 18px;
+        }
+    }
+    .advantages {
+        .title {
+            font-size: 28px;
+        }
+        &__show {
+            max-width: 100%;
+        }
+        &__block {
+            padding: 86px 24px 50px 50px;
+            max-width: 100%;
+        }
+        &__title {
+            font-size: 20px;
+        }
+
+        &__descr {
+            font-size: 16px;
+            margin-top: 20px;;
+        }
+
+        &__footer-video {
+            iframe {
+                height: 456px;
+            }
+        }
+        &__footer-img {
+            bottom: -13%;
+            right: -35%;
+        }
+    }
+    .products {
+        padding: 50px 0;
+        &__wrapper {
+            .products__sales {
+                top: 20%;
+                padding: 21px 0px 0px 6px;
+                width: 61px;
+                height: 61px;
+                font-size: 18px;
+            }
+        }
+        &__col-l {
+            width: 100%;
+        }
+        &__col-2 {
+            width: 100%;
+        }
+        &__container {
+            padding-left: 50px;
+            font-size: 16px;
+        }
+        &__descr {
+            margin-left: 10px;
+        }
+        .price {
+            margin-top: 0px;
+            &_new {
+                font-size: 22px;
+            }
+            &_old {
+                font-size: 18px;
+            }
+        }
+        &__title {
+            font-size: 28px;
+            margin-left: 0px;
+        }
+        &__col-2-container {
+            .link-back {
+                font-size: 16px;
+            }
+        }
+        &__second-wrapper {
+            padding-top: 50px;
+            .products__col-l {
+                padding: 0;
+            }
+            .products__sales {
+                top: 20px;
+                padding: 21px 0px 0px 6px;
+                width: 61px;
+                height: 61px;
+                font-size: 18px;
+            }
+        }
+        .arr {
+            width: 45px;
+            height: 45px;
+            &_left {
+                left: 0;
+            }
+            &_right {
+                right: 0;
+            }
+        }
+        &__item {
+            img{
+                max-width: 260px;
+            }
+        }
+        &__col-2-block {
+            padding: 0;
+        }
+        &__col-2-descr {
+            text-align: center;
+            font-size: 16px;
+            padding: 0 20px;
+        }
+
+    }
+    
+}
+
+@media (max-width: 375px) {
+    .intro {
+        padding: 60px 0 100px 0;
+        background: url("../img/angle.png") 29% 0% no-repeat,
+                    url("../img/main-background.png") no-repeat center center/cover;
+        &__title {
+            font-size: 24px;
+            padding-bottom: 180px;
+        }
+        &__wrapper {
+            margin-top: 25px;
+        }
+        .btn__sales {
+            margin-top: 10px;
+            width: 145px;
+            height: 145px;
+            font-size: 16px;
+        }
+        &__shoes-left {
+            left: 13.5%;
+            top: 11%;
+            max-width: 180px;
+        }
+    
+        &__shoes-right {
+            right: 9%;
+            top: 10%;
+            max-width: 160px;
+        }
+
+        &__footer {
+            padding-top: 0px;
+            .title {
+                font-size: 24px;
+            }
+        }
+        .card {
+            padding: 23px 10px 35px 10px;
+            &__title {
+                font-size: 18px;
+            }
+            &__descr {
+                font-size: 14px;
+            }
+        }
+        .price {
+            margin-top: 10px;
+            &_old {
+                font-size: 24px;
+            }
+            &_new {
+                font-size: 26px;
+            }
+        }
+        &__footer-descr {
+            font-size: 16px;
+        }
+
+        &__footer-wrapper {
+            max-width: 100%;
+        }
+    }
+    .gallery {
+        padding: 60px 0 60px 0;
+        .title {
+            font-size: 24px;
+        }
+        &__descr {
+            font-size: 16px;
+        }
+    }
+    .advantages {
+        &__effect {
+            &_3 {
+                top: 89%;
+                left: -29%;
+            }
+        }
+        padding: 50px 0px;
+        .title {
+            font-size: 24px;
+        }
+        &__block {
+            padding: 40px 25px 40px 25px
+        }
+        &__title {
+            font-size: 18px;
+        }
+        &__descr {
+            font-size: 14px;
+        }
+        &__footer {
+            padding-top: 30px;
+        }
+        &__footer-descr {
+            font-size: 16px;
+        }
+        &__footer-video {
+            iframe {
+                width: 356px;
+                height: 356px;
+            }
+        }
+        &__footer-img {
+            bottom: -8%;
+            right: -62%;
+        }
+    }
+    .products {
+        .logo-link_white{
+                display: block;
+                left: 85px;
+        }
+        &__title {
+            font-size: 24px;
+            margin-left: 20px;
+        }
+        &__col-2-descr {
+            font-size: 14px;
+            padding: 0 10px;
+        }
+        &__shoes-1 {
+            img {
+                max-width: 80%;
+            }
+        }
+        &__shoes-2 {
+            img {
+                max-width: 80%;
+            }
+        }
+        &__col-2-container_hidden-xs {
+            display: none;
+        }
+        &__col-2-container_visible-xs {
+            display: block;
+        }
+        &__container {
+            &_visible-xs {
+                display: flex;
+                font-size: 14px;
+                margin-top: 5px;
+                padding-left: 30px;
+            }
+        }
+        .price {
+            justify-content: center;
+        }
+        &__form {
+            padding: 0 20px;
+            .btn__order {
+                margin-top: 20px;
+                width: 100%;
+                font-size: 16px;
+            }
+        }
+        .select-field {
+            width: 100%;
+            height: 45px;
+            font-size: 13px;
+        }
+        .link-back {
+            display: none;
+        }
+    }
+
+    
+}
+
+@media (max-width: 320px) {
+    .intro {
+        &__title {
+            font-size: 20px;
+        }
+        &__wrapper {
+            margin-top: 25px;
+        }
+        .btn__sales {
+            margin-top: 25px;
+            width: 135px;
+            height: 135px;
+            font-size: 15px;
+        }
+        &__shoes-left {
+            left: 8.5%;
+            top: 10%;
+        }
+    
+        &__shoes-right {
+            right: 8%;
+            top: 9%;
+        }
+
+        .sale {
+            width: 260px;
+            height: 80px;
+            padding: 14px 60px 0px 0px;
+            span {
+                font-size: 32px;
+                &::after {
+                    top: 20px;
+                    right: -51px;
+                    font-size: 24px;
+                }
+            }
+        }
+
+        &__footer {
+            .title {
+                font-size: 20px;
+            }
+        }
+        .card {
+            padding: 23px 10px 35px 10px;
+            &__title {
+                font-size: 18px;
+            }
+            &__descr {
+                font-size: 16px;
+            }
+        }
+        .price {
+            margin-top: 10px;
+            &_old {
+                font-size: 22px;
+            }
+            &_new {
+                font-size: 24px
+            }
+        }
+    }
+    .gallery {
+        .title {
+            font-size: 20px;
+        }
+    }
+    .advantages {
+        padding: 30px 0px;
+        .title {
+            font-size: 22px;
+        }
+        &__block {
+            padding: 40px 25px 40px 25px
+        }
+        &__title {
+            font-size: 17px;
+        }
+        &__descr {
+            font-size: 12px;
+        }
+        &__footer {
+            padding-top: 30px;
+        }
+        &__footer-descr {
+            font-size: 14px;
+        }
+        &__footer-video {
+            iframe {
+                width: 256px;
+                height: 256px;
+            }
+        }
+        &__footer-img {
+            bottom: -5%;
+            right: -62%;
+        }
+    }
+    .products {
+        &__title {
+            font-size: 22px;
+        }
+        &__container {
+            &_visible-xs {
+                padding: 0 13px;
+            }
+        }
+    }
+}

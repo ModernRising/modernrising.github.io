@@ -1,0 +1,72 @@
+.intro {
+    padding: 30px 0 45px 0px;
+    min-height: 1500px;
+    position: relative;
+    background: 
+                url("../img/effect.png") 2% 10% no-repeat,
+                url("../img/effect2.png") 95% 50% no-repeat,
+                url("../img/angle.png") top right no-repeat,
+                url("../img/main-background.png") no-repeat center center/cover;
+    &__wrapper {
+        text-align: center;
+        text-transform: uppercase;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    &__title {
+        margin: 0;
+        font-size: 36px;
+        font-weight: 700;
+        color: #fff;
+        max-width: 470px;
+        text-align: center;
+    }
+
+    &__shoes-left {
+        display: block;
+        position: absolute;
+        left: 14%;
+        top: 9%;
+        max-width: 612px;
+    }
+
+    &__shoes-right {
+        display: block;
+        position: absolute;
+        right: 18%;
+        top: 10%;
+        max-width: 522px;
+    }
+
+    &__footer {
+        padding-top: 325px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &__footer-title {
+        font-size: 40px;
+        color: #D7014D;
+        font-weight: 500;
+    }
+    
+    &__footer-descr {
+        max-width: 537px;
+        text-align: center;
+        font-size: 18px;
+        color: #000851;
+        line-height: 28px;
+    }
+    &__footer-wrapper {
+        position: relative;
+        margin-top: 43px;
+
+    }
+    &__footer-image {
+        display: block;
+        padding-left: 25px;
+        pointer-events: none;
+    }
+}
