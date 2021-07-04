@@ -285,6 +285,9 @@
         }
         &__skills {
             grid-template-columns: 1fr;
+            &-item {
+                justify-content: center;
+            }
         }
     }
     .resume {
